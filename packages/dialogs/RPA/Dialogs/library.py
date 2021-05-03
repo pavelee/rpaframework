@@ -205,9 +205,6 @@ class Dialogs:
         except RobotNotRunningError:
             pass
 
-        # Suppress useless error messages from pywebview
-        logging.getLogger("pywebview").setLevel(logging.CRITICAL)
-
     def add_element(self, element: Dict[str, Any]) -> None:
         if element["type"].startswith("input-"):
             name = element["name"]

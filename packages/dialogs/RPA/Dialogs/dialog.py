@@ -33,6 +33,9 @@ def run(
     bridge = Bridge(elements, auto_height)
 
     try:
+        # Suppress useless error messages from pywebview
+        logging.getLogger("pywebview").setLevel(logging.CRITICAL)
+
         window = webview.create_window(js_api=bridge, **options)
         bridge.window = window
 
@@ -90,8 +93,10 @@ class Dialog:
 
         self._is_pending = True  # Flag to indicate if someone has handled the result
         self._result: Optional[Result] = None
-        self._queue: multiprocessing.Queue = multiprocessing.Queue()
-        self._process = multiprocessing.Process(
+
+        ctx = multiprocessing.get_context('spawn')
+        self._queue: multiprocessing.Queue = ctx.Queue()
+        self._process = ctx.Process(
             target=run, args=(self._queue, self._elements, self._options)
         )
 
