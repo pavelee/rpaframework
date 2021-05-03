@@ -15,7 +15,7 @@ export const Dialog = (props: DialogProps): JSX.Element => {
     if (ref.current) {
       Bridge.setHeight(ref.current.offsetHeight);
     }
-  }, []);
+  }, [props.elements]);
 
   return (
     <ThemeProvider>
