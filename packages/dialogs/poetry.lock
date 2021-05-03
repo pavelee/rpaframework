@@ -306,7 +306,7 @@ toml = ">=0.7.1"
 
 [[package]]
 name = "pyobjc-core"
-version = "7.1"
+version = "7.2"
 description = "Python<->ObjC Interoperability Module"
 category = "main"
 optional = false
@@ -314,26 +314,26 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "pyobjc-framework-cocoa"
-version = "7.1"
+version = "7.2"
 description = "Wrappers for the Cocoa frameworks on macOS"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
-pyobjc-core = ">=7.1"
+pyobjc-core = ">=7.2"
 
 [[package]]
 name = "pyobjc-framework-webkit"
-version = "7.1"
+version = "7.2"
 description = "Wrappers for the framework WebKit on macOS"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
-pyobjc-core = ">=7.1"
-pyobjc-framework-Cocoa = ">=7.1"
+pyobjc-core = ">=7.2"
+pyobjc-framework-Cocoa = ">=7.2"
 
 [[package]]
 name = "pyparsing"
@@ -549,7 +549,7 @@ python-versions = "*"
 
 [[package]]
 name = "typing-extensions"
-version = "3.7.4.3"
+version = "3.10.0.0"
 description = "Backported and Experimental Type Hints for Python 3.5+"
 category = "dev"
 optional = false
@@ -797,25 +797,25 @@ pylint = [
     {file = "pylint-2.8.2.tar.gz", hash = "sha256:586d8fa9b1891f4b725f587ef267abe2a1bad89d6b184520c7f07a253dd6e217"},
 ]
 pyobjc-core = [
-    {file = "pyobjc-core-7.1.tar.gz", hash = "sha256:a0616d5d816b4471f8f782c3a9a8923d2cc85014d88ad4f7fec694be9e6ea349"},
-    {file = "pyobjc_core-7.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:f9fb45c9916f2a03ecd6b9ecde4c35d1d0f1a590ae2ea2372f9d9a360226ac1d"},
-    {file = "pyobjc_core-7.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:fff8e87358c6195a2937004f279050cce3d4c02cd77acd73c5ad367307def855"},
-    {file = "pyobjc_core-7.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:afb38efd3f2960eb49eb78552d465cfd025a9d6efa06cd4cd8694dafbe7c6e06"},
-    {file = "pyobjc_core-7.1-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:7cb329c4119044fe83bcb3c5d4794d636c706ff0cb7c1c77d36ef5c373100082"},
-    {file = "pyobjc_core-7.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:7913d7b20217c294900537faf58e5cc15942ed7af277bf05db25667d18255114"},
+    {file = "pyobjc-core-7.2.tar.gz", hash = "sha256:9e9ec482d80ea030cdb1613d05a247f31eedabe6666d884d42dd890cc5fb0e05"},
+    {file = "pyobjc_core-7.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:94b4d9de9d228db52dd35012096d63bdf8c1ace58ea3be1d5f6f39313cd502f2"},
+    {file = "pyobjc_core-7.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:971cbd7189ae1aa03ef0d16124aa5bcd053779e0e6b6011a41c3dbd5b4ea7e88"},
+    {file = "pyobjc_core-7.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:9d93b20394008373d6d2856d49aaff26f4b97ff42d924a14516c8a82313ec8c0"},
+    {file = "pyobjc_core-7.2-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:860183540d1be792c26426018139ac8ba75e85f675c59ba080ccdc52d8e74c7a"},
+    {file = "pyobjc_core-7.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:ffe61d3c2a404354daf2d895e34e38c5044453353581b3c396bf5365de26250c"},
 ]
 pyobjc-framework-cocoa = [
-    {file = "pyobjc-framework-Cocoa-7.1.tar.gz", hash = "sha256:67966152b3d38a0225176fceca2e9f56d849c8e7445548da09a00cb13155ec3e"},
-    {file = "pyobjc_framework_Cocoa-7.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:bef77eafaac5eaf1d91d479d5483fd02216caa3edc27e8f5adc9af0b3fecdac3"},
-    {file = "pyobjc_framework_Cocoa-7.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:b2ea3582c456827dc20e648c905fdbcf8d3dfae89434f981e9b761cd07262049"},
-    {file = "pyobjc_framework_Cocoa-7.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:1a4050f2d776f40c2409a151c6f7896420e936934b3bdbfabedf91509637ed9b"},
-    {file = "pyobjc_framework_Cocoa-7.1-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:3f68f022f1f6d5985c418e10c6608c562fcf4bfe3714ec64fd10ce3dc6221bd4"},
-    {file = "pyobjc_framework_Cocoa-7.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:ecfefd4c48dae42275c18679c69f6f2fff970e711097515a0a8732fc10194018"},
+    {file = "pyobjc-framework-Cocoa-7.2.tar.gz", hash = "sha256:c8b23f03dc3f4436d36c0fd006a8a084835c4f6015187df7c3aa5de8ecd5c653"},
+    {file = "pyobjc_framework_Cocoa-7.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:8e5dd5daa0096755937ec24c345a4b07c3fa131a457f99e0fdeeb01979178ec7"},
+    {file = "pyobjc_framework_Cocoa-7.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:828d183947fc7746953fd0c9b1092cc423745ba0b49719e7b7d1e1614aaa20ec"},
+    {file = "pyobjc_framework_Cocoa-7.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:7e4c6d7baa0c2ab5ea5efb8836ad0b3b3976cffcfc6195c1f195e826c6eb5744"},
+    {file = "pyobjc_framework_Cocoa-7.2-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:c9a9d1d49cc5a810773c88d6de821e60c8cc41d01113cf1b9e7662938f5f7d66"},
+    {file = "pyobjc_framework_Cocoa-7.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:506c2cd09f421eac92b9008a0142174c3d1d70ecd4b0e3fa2b924767995fd14e"},
 ]
 pyobjc-framework-webkit = [
-    {file = "pyobjc-framework-WebKit-7.1.tar.gz", hash = "sha256:586c6da9e50e9c6c2494189b7519301f49ef903a95203d518ac06ef5c720b929"},
-    {file = "pyobjc_framework_WebKit-7.1-cp36-abi3-macosx_10_9_universal2.whl", hash = "sha256:4b51ab101cb05ca9c90276b7795d1febe5263ab26c756e858cec6b2aa3f2b56b"},
-    {file = "pyobjc_framework_WebKit-7.1-cp36-abi3-macosx_10_9_x86_64.whl", hash = "sha256:9c2a2e09845ce7ed743f89b238096bac75e170654cfa65eb4758c40d7050322d"},
+    {file = "pyobjc-framework-WebKit-7.2.tar.gz", hash = "sha256:b25e2fbc0e04c72eab7d1def9408611411a435ec48e47e2b055a46389e470626"},
+    {file = "pyobjc_framework_WebKit-7.2-cp36-abi3-macosx_10_9_universal2.whl", hash = "sha256:5bc53e56c4f4c76706106b21ca56e7c73bfde5b50c5596df82bac3165b93a815"},
+    {file = "pyobjc_framework_WebKit-7.2-cp36-abi3-macosx_10_9_x86_64.whl", hash = "sha256:02021efac2abde3f6282ca58d944867b0f50b810e7dd8ca703cfe8631e43ef93"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
@@ -1026,9 +1026,9 @@ typed-ast = [
     {file = "typed_ast-1.4.3.tar.gz", hash = "sha256:fb1bbeac803adea29cedd70781399c99138358c26d05fcbd23c13016b7f5ec65"},
 ]
 typing-extensions = [
-    {file = "typing_extensions-3.7.4.3-py2-none-any.whl", hash = "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"},
-    {file = "typing_extensions-3.7.4.3-py3-none-any.whl", hash = "sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918"},
-    {file = "typing_extensions-3.7.4.3.tar.gz", hash = "sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c"},
+    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
+    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
+    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
 ]
 urllib3 = [
     {file = "urllib3-1.26.4-py2.py3-none-any.whl", hash = "sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df"},
