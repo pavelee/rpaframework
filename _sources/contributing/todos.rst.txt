@@ -2,14 +2,14 @@
 TODO
 ****
 
-RPA.Cloud.Google:
-=================
+RPA.Database:
+=============
 
 .. csv-table::
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "1660", "mypy should handle enum exhaustivity validation"
+   "208", "take autocommit into use for all database modules"
 
 RPA.Desktop.Windows:
 ====================
@@ -18,10 +18,10 @@ RPA.Desktop.Windows:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "613", "Handle too compled method"
-   "1089", "return more valuable information about what should"
-   "1337", "supporting multiple search criterias at same time to identify ONE element"
-   "1363", "supporting multiple search criterias at same time to identify ONE element"
+   "614", "Handle too compled method"
+   "1094", "return more valuable information about what should"
+   "1342", "supporting multiple search criterias at same time to identify ONE element"
+   "1368", "supporting multiple search criterias at same time to identify ONE element"
 
 RPA.Desktop.keywords.application:
 =================================
@@ -30,8 +30,8 @@ RPA.Desktop.keywords.application:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "111", "Move implementations to platform-specific adapters"
-   "167", "Find out way to get actual default application,"
+   "112", "Move implementations to platform-specific adapters"
+   "168", "Find out way to get actual default application,"
 
 RPA.Desktop.keywords.finder:
 ============================
@@ -68,7 +68,7 @@ RPA.Email.ImapSmtp:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "652", "mypy should handle enum exhaustivity validation"
+   "645", "mypy should handle enum exhaustivity validation"
 
 RPA.FileSystem:
 ===============
@@ -93,6 +93,17 @@ RPA.JSON:
 
    "133", "Add more logging about affected rows, at least on debug level"
 
+RPA.JavaAccessBridge:
+=====================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "177", "add keyword for taking screenshots of elements and window"
+   "178", "implement proper XPath syntax support"
+   "561", "change to use RPA.core.geometry Region/Point"
+
 RPA.Robocloud.Secrets:
 ======================
 
@@ -109,13 +120,10 @@ RPA.Tables:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "2", "Distinguish between range-based index and named index"
-   "3", "Integers as column names? Columns forced to strings?"
-   "4", "Implement column slicing"
-   "5", "Index accessing through dot notation?"
-   "6", "Index name conflict in exports/imports"
-   "7", "Return Robot Framework DotDict instead of dict?"
-   "802", "Ensure original index is maintained?"
+   "2", "Implement column slicing"
+   "3", "Index name conflict in exports/imports"
+   "4", "Return Robot Framework DotDict instead of dict?"
+   "779", "Ensure original index is maintained?"
 
 RPA.Tasks:
 ==========
